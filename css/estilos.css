@@ -1,0 +1,38 @@
+
+body{
+    background-image: url(http://www.estatisticasegura.com.br/wp-content/uploads/2017/07/BACKGROUND-TOP.jpg);
+    background-size: auto 100vh;
+    font-family: arial;
+    height: 100vh;
+}
+
+.menu{
+    background-color:darkgrey;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+a{
+    color:darkslategrey;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.site-subtitle, .site-title{
+    color: black;
+    text-align: center;
+}
+
+.site-subtitle{
+    font-size: italic;
+}
