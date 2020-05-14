@@ -1,13 +1,42 @@
+/* Reset do Css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/fundo.jpg');
+    background-size: auto 100vh;
+}
 
 body{
-    background-image: url(http://www.estatisticasegura.com.br/wp-content/uploads/2017/07/BACKGROUND-TOP.jpg);
-    background-size: auto 100vh;
     font-family: arial;
     height: 100vh;
 }
 
+@media (min-width: 300px){
+    body{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 400px){
+    body{
+        font-size: 16px;
+    }
+}
+
 .menu{
     background-color:darkgrey;
+    position: fixed;
+    width: 100vw;
+    top:0;
 }
 
 .menu ul{
@@ -19,6 +48,10 @@ body{
     list-style: none;
 }
 
+.menu a{
+    display: block;
+    padding: 10px 20px;
+}
 a{
     color:darkslategrey;
     text-decoration: none;
@@ -33,6 +66,15 @@ a:hover{
     text-align: center;
 }
 
+.site-title{
+    font-size: 3em;
+}
+
 .site-subtitle{
     font-size: italic;
+}
+
+img{
+    height: 150px;
+    width: 150px;
 }
