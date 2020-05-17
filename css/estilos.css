@@ -77,11 +77,47 @@ a:hover{
     line-height: 1em;
 }
 
-.portifolio h2 {
-    font-family: 'Share Tech Mono', monospace;
+.portfolio{
+    padding: 2em;
+    background-image: linear-gradient(to bottom, rgba(232 232 232), rgba(54 54 54));
+    height: 100vh;
 }
 
-img{
-    height: 150px;
-    width: 150px;
+.portfolio h2 {
+    font-family: 'Share Tech Mono', monospace;
+    margin-bottom: 1em;
+}
+
+.portfolio .grid{
+    display: grid;
+    gap: 3em;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (min-width: 560px){
+    .portfolio .grid{
+        grid-template-columns: repeat(2,180px);  
+    }
+}
+
+@media (min-width: 850px){
+    .portfolio{
+        height: 80vh;
+    }
+    .portfolio .grid{
+        grid-template-columns: repeat(4,180px);
+        height: 50vh;
+    }
+}
+
+.portfolio figure{
+    text-align: center;
+}
+
+.img-portfolio{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
 }
