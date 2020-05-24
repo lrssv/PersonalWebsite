@@ -107,7 +107,7 @@ a:hover{
 }
 
 
-.sobre img{
+.sobre img {
     border: 3px solid whitesmoke;
     border-radius: 50%;
     height: 15em;
@@ -131,16 +131,31 @@ a:hover{
     text-align: justify;
 }
 
+@media (max-width: 800px){
+    .sobre .paragrafos{
+        margin-right: 2vh;
+        margin-left: 2vh;
+    }
+}
+
 .sobre a{
     font-weight: bold;
 }
 
+.portfolio{
+    padding-top: 5em;
+}
 
 .portfolio .grid{
     display: grid;
-    gap: 3em;
+    gap: 5em;
     justify-content: center;
     align-content: center;
+    
+}
+
+.portfolio figcaption{
+    font-size: 1.3em;
 }
 
 .portfolio h2, 
@@ -151,6 +166,14 @@ a:hover{
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
+}
+
+.img-portfolio {
+    border: 3px solid whitesmoke;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
 }
 
 .portfolio figure{
@@ -165,10 +188,10 @@ a:hover{
 
 @media (min-width: 850px){
     .portfolio{
-        height: 100vh;
+        height: 60vh;
     }
     .portfolio .grid{
-        grid-template-columns: repeat(4,180px);
+        grid-template-columns: repeat(3,180px);
         height: 50vh;
     }
 }
@@ -187,19 +210,20 @@ a:hover{
 }
 
 .contato{
-    height: 50vh;
-    padding: 2em;
+    height: 40vh;
+    padding: 2.5em;
     background-color: #ecd54f;
 }
 
 .contato .icons{
+    padding: 2em;
     text-align: center;
     justify-content: space-between;
 }
 
 .contato a{
-    color: #1C1C1C ;
-    font-size: 6em;
+    color: black;
+    font-size: 4em;
     padding: 0.2em;
 }
 
@@ -207,4 +231,17 @@ a:hover{
 .contato a:hover{
     text-decoration: none;
     text-shadow: 0px 0px 10px rgba(0,0,0,.5)
+}
+
+.rodape{
+    height: 2em;
+    text-align: center;
+    padding: 0.3em;
+    background-color: #192f43;
+}
+
+@media (max-width:560px){
+    .rodape{
+        font-size: 0.7em;
+    }
 }
