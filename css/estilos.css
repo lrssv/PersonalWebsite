@@ -6,18 +6,22 @@
     box-sizing: border-box;
 }
 
+
+body{
+    background-image: url('../img/background.png');
+    background-size: 100vw;
+    background-position: bottom;
+    background-color: #f5b34b;
+    font-family: 'Zilla Slab', serif;
+    height: 100vh;
+}
+
 header{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/fundo.jpg');
-    background-size: auto 100vh;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
+    
 }
 
 @media (min-width: 300px){
@@ -33,7 +37,7 @@ body{
 }
 
 .menu{
-    background-color:darkgrey;
+    background-color: #324b62;
     position: fixed;
     width: 100vw;
     top:0;
@@ -54,9 +58,8 @@ body{
     padding: 10px 20px;
 }
 a{
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
-    text-transform: uppercase;
     font-family: 'Share Tech Mono', monospace;
 }
 
@@ -64,36 +67,94 @@ a:hover{
     text-decoration: underline;
 }
 
+
+.titulo{
+    margin-bottom: 8rem;
+}
 .site-title{
-    font-size: 3em;
-    color: #1C1C1C;
-    text-align: center;
+    font-size: 3.8em;
+    color: whitesmoke;
+    margin-right: 12em;
     font-family: 'Share Tech Mono', monospace;
+
 }
 
 .site-subtitle{
-    color: #363636;
+    font-size: 1.8em;
+    color: #da723b;
     text-align: center;
     font-family: 'VT323', monospace;
-    line-height: 1em;
+    line-height: 0.5em;
+    margin-right: 18em;
 }
 
-.portfolio{
-    padding: 2em;
-    background-image: linear-gradient(to bottom, rgba(232 232 232), rgba(54 54 54));
-    min-height: 100vh;
+@media (max-width: 1000px){
+    .titulo{
+        margin-bottom: 0;
+    }
+
+    .site-title, .site-subtitle{
+        text-align: center;
+        margin-right: 0;
+    }
 }
 
-.portfolio h2, .contato h2 {
-    font-family: 'Share Tech Mono', monospace;
-    margin-bottom: 1em;
+
+.sobre, .portfolio{
+    min-height: 80vh;
+    background-color: #f5b34b;
+    padding: 2.5em;
 }
+
+
+.sobre img{
+    border: 3px solid whitesmoke;
+    border-radius: 50%;
+    height: 15em;
+    padding: 15px; 
+}
+
+.sobre figure{
+    text-align: center;
+}
+
+.sobre .paragrafos{
+    margin-right: 15vh;
+    margin-left: 15vh;
+    margin-top: 5vh;
+}
+
+.sobre p{
+    font-size: 1.3em;
+    text-indent: 1.5em;
+    margin-bottom: 0.2em;
+    text-align: justify;
+}
+
+.sobre a{
+    font-weight: bold;
+}
+
 
 .portfolio .grid{
     display: grid;
     gap: 3em;
     justify-content: center;
     align-content: center;
+}
+
+.portfolio h2, 
+.contato h2, 
+.sobre h2 {
+    font-size: 1.8em;
+    font-family: 'Share Tech Mono', monospace;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio figure{
+    text-align: center;
 }
 
 @media (min-width: 560px){
@@ -104,16 +165,12 @@ a:hover{
 
 @media (min-width: 850px){
     .portfolio{
-        height: 80vh;
+        height: 100vh;
     }
     .portfolio .grid{
         grid-template-columns: repeat(4,180px);
         height: 50vh;
     }
-}
-
-.portfolio figure{
-    text-align: center;
 }
 
 .img-portfolio{
@@ -132,7 +189,7 @@ a:hover{
 .contato{
     height: 50vh;
     padding: 2em;
-    background-color: gray;
+    background-color: #ecd54f;
 }
 
 .contato .icons{
